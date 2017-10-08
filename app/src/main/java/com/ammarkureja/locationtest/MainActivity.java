@@ -114,10 +114,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Log.d(TAG, "onClick: buttonclicked" );
-                mLocationManager.requestLocationUpdates("gps", 5000, 0, mLocationListener);
+                mLocationManager.requestLocationUpdates("gps", 0, 0, mLocationListener);
                 Intent intent = new Intent(MainActivity.this, MeetingActivity.class);
                 //intent.putExtra(LOCATION_KEY, current_location.toString());
-                startActivity(intent);
+                //startActivity(intent);
 
             }
         });
